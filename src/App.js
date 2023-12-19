@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import FeedbackForm from './roles/user/feedbackform';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
+import Loader from './components/loading/loading';
+import LeaderboardPage from './roles/police/leaderboard/leaderboard';
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+
+  useEffect(() => {
+    const loadAssets = async () => {
+      
+      await loadAssetsFunction1();
+      await loadAssetsFunction2();
+     
+      setLoading(false);
+    };
+
+    loadAssets();
+  }, []);
+
+  const loadAssetsFunction1 = () => {
+   
+    return new Promise((resolve) => {
+     
+      setTimeout(resolve, 2000);
+    });
+  };
+
+  const loadAssetsFunction2 = () => {
+   
+    return new Promise((resolve) => {
+   
+      setTimeout(resolve, 1500);
+    });
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+     <div>
+      {loading ? (
+      
+        <div>
+          <Loader/>
+        
+        </div>
+      ) : (
+        <>
+        <FeedbackForm/>
+        <LeaderboardPage />
+        </>
+      )}
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
