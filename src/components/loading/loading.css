@@ -1,10 +1,16 @@
 .loader_container{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:#000 ;
     height: 100vh;
+    color: white;
+    transition: .9s;
+}
+.loadingtext{
+  margin-top: 20px;
 }
 .loader {
     position: relative;

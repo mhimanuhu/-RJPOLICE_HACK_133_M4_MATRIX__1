@@ -1,0 +1,35 @@
+.profile_container{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(-45deg, #ee7752, #0f857d, #23a6d5, #2355d5);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    margin: 30px 10px 0px 10px;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    border-radius: 4px;
+}
+
+.logout{
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.section1 img{
+    width: 70px;
+    border-radius: 30px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

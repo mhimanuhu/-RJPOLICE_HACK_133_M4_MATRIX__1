@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import FeedbackForm from './roles/user/feedbackform';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Loader from './components/loading/loading';
 import LeaderboardPage from './roles/police/leaderboard/leaderboard';
+import ProfilePage from './roles/user/profile'; 
+import Success from './roles/user/success';
+
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -35,24 +37,26 @@ const App = () => {
       setTimeout(resolve, 1500);
     });
   };
-  return (
-    <>
-     <div>
-      {loading ? (
-      
-        <div>
-          <Loader/>
-        
-        </div>
-      ) : (
-        <>
-        <FeedbackForm/>
-        <LeaderboardPage />
-        </>
-      )}
-    </div>
-    </>
-  )
-}
 
-export default App
+
+  return (
+    <Router>
+      <div>
+        {loading ? (
+          <div>
+            <Loader />
+          </div>
+        ) : (
+          <Routes> {/* Use Routes instead of Switch */}
+            <Route path="/" element={<FeedbackForm />} /> {/* Add default route */}
+            <Route path="/leaderboard" element={<LeaderboardPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/success" element={<Success/>} />
+          </Routes>
+        )}
+      </div>
+    </Router>
+  );
+};
+
+export default App;

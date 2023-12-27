@@ -1,5 +1,5 @@
 .nav_container{
-    background: linear-gradient(-45deg, #ee7752, #ff2d7e, #23a6d5, #2355d5);
+    background: linear-gradient(-45deg, #ee7752, #fa0553, #23a6d5, #2355d5);
     color: white;
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -17,9 +17,55 @@
 img{
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
+.current_page{
+    display: flex;
+    justify-self: center;
+    background: linear-gradient(-45deg, #ee7752, #fa0553, #23a6d5, #2355d5);
+    animation: currentpage 15s ease infinite;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    background-size: 400% 400%;
+    border-radius: 3px;
+}
+.profile_leaderboard{
+    display: flex;
+    justify-content: space-between;
 
-.myprofile{
+}
+.navlink{
+ margin-left: 20px;
+ padding: 5px 10px 5px 10px;
+ border-radius: 3px;
+ transition: .5s background;
+ background: linear-gradient(-45deg, #ee7752, #fa0553, #23a6d5, #2355d5);
+ background-size: 400% 400%;
+ animation: gradient 15s ease infinite;
+}
+a .navlink{
     cursor: pointer;
+    color: white;
+    text-decoration: none !important ;
+}
+
+.navlink:hover{
+    background:rgb(88, 88, 231);
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;    
+}
+
+@keyframes currentpage {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 @keyframes gradient {
 	0% {

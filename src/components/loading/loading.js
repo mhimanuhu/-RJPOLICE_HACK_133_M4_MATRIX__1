@@ -7,6 +7,7 @@ const loading = () => {
     <div className="loader">
     <span></span>
     </div>
+    <span className='loadingtext' >Loading. . .  .</span>
     </div>
     </>
     )
