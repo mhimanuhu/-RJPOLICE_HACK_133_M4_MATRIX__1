@@ -1,11 +1,14 @@
 import React from 'react';
 import "./authenticate.css";
 import Navbar from "../../components/navbar/nav";
+
+import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 const authenticate = () => {
   return (
     <>
     <Navbar />
+     <Fade>
     <div className="authencation_container">
       <div className="title_authenticate">
         AUTHENTICATION
@@ -25,6 +28,7 @@ const authenticate = () => {
         </div>
       </div>
     </div>
+    </Fade>
     </>
   )
 }

@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as XLSX from 'xlsx';
+
+import { Fade } from "react-awesome-reveal";
 import "./sms.css";
 
 // Main component
@@ -58,6 +60,7 @@ const BulkSMSUploader = () => {
 
   return (
     <div>
+        <Fade>
        <h2>ADD NUMBERS  </h2>
       <input type="file" accept=".csv, .xlsx" onChange={handleFileUpload} />
       <div className='draft' >
@@ -87,7 +90,9 @@ const BulkSMSUploader = () => {
       
 
       <ToastContainer />
+      </Fade>
     </div>
+
   );
 };
 

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './form.css';
+
+import { Fade } from "react-awesome-reveal";
 import Navbar from '../../components/navbar/nav';
 const App = () => {
   const [formData, setFormData] = useState({
@@ -51,6 +53,7 @@ const App = () => {
   return (
     <>
     <Navbar />
+    <Fade>
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="form-row">
@@ -125,6 +128,7 @@ const App = () => {
         </div>
       </form>
     </div>
+    </Fade>
     </>
   );
 };

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Fade } from "react-awesome-reveal";
 import Navbar from '../../components/navbar/nav';
 import S_nav from "../comp/secondary_nav/police_nav";
 const dasbhoard = () => {
   return (
     <>
-
+    <Fade>
     <Navbar />
     <S_nav />
     <div className="welcome">
@@ -12,6 +13,7 @@ const dasbhoard = () => {
       <p>Rajasthan Police Welcomes You !!</p>
       <p>Explore tabs and identify public issues</p>
     </div>
+    </Fade>
     </>
   )
 }

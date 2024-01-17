@@ -1,10 +1,13 @@
 import React from 'react'
 import Navbar from "../../components/navbar/nav";
+
+import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 const reset = () => {
   return (
     <>
     <Navbar />
+    <Fade>
     <div className="authencation_container">
       <div className="title_authenticate">
         RESET PASSWORD
@@ -21,7 +24,7 @@ const reset = () => {
         </div>
       </div>
     </div>
-
+</Fade>
     </>
   )
 }

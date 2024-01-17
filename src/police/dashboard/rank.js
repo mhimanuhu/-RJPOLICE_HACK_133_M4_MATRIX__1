@@ -3,6 +3,9 @@ import "./common.css";
 import Navbar from '../../components/navbar/nav';
 import S_nav from "../comp/secondary_nav/police_nav";
 import logo from "../../assets/images/rajpolicelogo.png";
+
+import { Fade } from "react-awesome-reveal";
+import { Link } from 'react-router-dom';
 const PoliceStationRankingTable = () => {
   // Example data for police stations
   const policeStations = [
@@ -22,6 +25,7 @@ const PoliceStationRankingTable = () => {
     <>
     <Navbar />
     <S_nav />
+    <Fade>
     <table className="ranking-table">
       <thead>
         <tr>
@@ -40,14 +44,15 @@ const PoliceStationRankingTable = () => {
             <td>{station.name}</td>
             <td>{station.points}</td>
             <td>
-              <button className="view-feed-btn" onClick={() => handleViewFeed(station.id)}>
+             <Link to="/police/dashboard/view_feedback"> <button className="view-feed-btn" onClick={() => handleViewFeed(station.id)}>
                 View Feed
-              </button>
+              </button></Link>
             </td>
           </tr>
         ))}
       </tbody>
     </table>
+    </Fade>
     </>
   );
 };

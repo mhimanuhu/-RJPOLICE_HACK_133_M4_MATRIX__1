@@ -1,9 +1,11 @@
 import React from 'react';
 import "./policenav.css";
+
 import { Link } from 'react-router-dom';
 const police_nav = () => {
   return (
     <>
+
     <div className="pol_nav_container">
         <Link to="/police/dashboard/addnumbers"><div className="nav_item">
             ADD NUMBERS
@@ -16,6 +18,7 @@ const police_nav = () => {
             VIEW FEEDBACK
         </div></Link>
     </div>
+
     </>
   )
 }
