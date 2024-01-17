@@ -6,9 +6,9 @@ import logo from "../../assets/images/rajpolicelogo.png";
 const PoliceStationRankingTable = () => {
   // Example data for police stations
   const policeStations = [
-    { id: 1, name: 'Station A', points: 100 },
-    { id: 2, name: 'Station B', points: 90 },
-    { id: 3, name: 'Station C', points: 80 },
+    { id: 1, name: 'Khatipura Station', points: 100 },
+    { id: 2, name: 'Kardhani Station', points: 90 },
+    { id: 3, name: 'Murlipura Station', points: 80 },
     // Add more police stations as needed
   ];
 

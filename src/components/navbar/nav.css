@@ -19,3 +19,21 @@
 .nav_container img{
     height: 40px;
 }
+
+@media(max-width:800px){
+    .nav_container{
+        font-size: 24px;
+    }
+    .nav_container img{
+        height: 30px;
+    }
+}
+
+@media(max-width:540px){
+    .nav_container{
+        font-size: 15px;
+    }
+    .nav_container img{
+        height: 22px;
+    }
+}

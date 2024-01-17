@@ -12,3 +12,9 @@ a .nav_item{
     font-size: 18px;
     padding: 5px 10px 5px 10px;
 }
+
+@media(max-width:1000px){
+    a .nav_item{
+        font-size: 10px;
+    }
+}
