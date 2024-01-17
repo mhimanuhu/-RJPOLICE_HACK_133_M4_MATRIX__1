@@ -1,0 +1,21 @@
+.nav_container{
+    background: #5C3ED7;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+}
+.nav_container .logo{
+    display: flex;  
+    justify-self: flex-start;
+}
+.nav_container a .title{
+    color: #fff;
+}
+
+.nav_container img{
+    height: 40px;
+}

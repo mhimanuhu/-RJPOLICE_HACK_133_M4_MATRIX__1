@@ -1,0 +1,32 @@
+/* ranking */
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .ranking-table th, .ranking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .ranking-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .logo {
+    max-width: 50px;
+  }
+  
+  .view-feed-btn {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+/*   
+  ranking */

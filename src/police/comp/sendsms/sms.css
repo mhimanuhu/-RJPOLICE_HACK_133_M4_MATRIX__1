@@ -1,0 +1,31 @@
+.sms-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sms-table th, .sms-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .sms-table th {
+    background-color: #f2f2f2;
+  }
+
+  .sendsms{
+    margin-top: 20px;
+  }
+ .draft{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+ }
+  .draft input{
+    line-height: 40px;
+    margin-top: 10px;
+    padding-left: 15px;
+    outline: none;
+  }
