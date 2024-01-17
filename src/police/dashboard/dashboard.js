@@ -7,7 +7,7 @@ const dasbhoard = () => {
 
     <Navbar />
     <S_nav />
-    <div style={{marginTop:"100px", marginLeft:"200px"}}>
+    <div className="welcome">
       <h1>Hello User</h1>
       <p>Rajasthan Police Welcomes You !!</p>
       <p>Explore tabs and identify public issues</p>

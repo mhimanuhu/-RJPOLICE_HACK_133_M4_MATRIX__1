@@ -37,3 +37,13 @@
         height: 22px;
     }
 }
+
+@media(max-width:360px){
+    .nav_container{
+        font-size: 10px;
+        height: 30px;
+    }
+    .nav_container img{
+        height: 18px;
+    }
+}
