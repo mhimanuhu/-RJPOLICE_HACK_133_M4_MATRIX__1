@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './complain.css'; // Import the CSS file
 import Navbar from "../../components/navbar/nav";
 import UserNav from '../user_nav/usernav';
+import { Fade } from 'react-awesome-reveal';
 const ComplaintForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -48,6 +49,7 @@ const ComplaintForm = () => {
     <>
     <Navbar />
     <UserNav />
+    <Fade>
     <div className="container">
       
       <form onSubmit={handleSubmit}>
@@ -189,6 +191,7 @@ const ComplaintForm = () => {
         </button>
       </form>
     </div>
+    </Fade>
     </>
   );
 };

@@ -11,8 +11,12 @@ a .nav_item{
     color: #fff;
     font-size: 18px;
     padding: 5px 10px 5px 10px;
+    transition: .3s all;
 }
-
+.nav_item.active {
+    background-color: red;
+    color: white; /* Set text color for the active state */
+  }
 @media(max-width:1000px){
     a .nav_item{
         font-size: 10px;

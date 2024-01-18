@@ -2,14 +2,14 @@ import React from 'react'
 import Navbar from '../../components/navbar/nav';
 import S_nav from "../comp/secondary_nav/police_nav";
 
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import "./common.css";
 const viewfeed = () => {
   return (
    <>
     <Navbar />
     <S_nav />
-    <Fade>
+    <Slide>
     <div className="station_title">KHATIPURA STATION</div>
     <div className="cummulative">
         <h1>Commulative Feedback</h1>
@@ -123,7 +123,7 @@ const viewfeed = () => {
     </tbody>
     </table>
     </div>
-    </Fade>
+    </Slide>
    </>
   )
 }

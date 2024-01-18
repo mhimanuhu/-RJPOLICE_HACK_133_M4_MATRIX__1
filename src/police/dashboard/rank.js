@@ -4,7 +4,7 @@ import Navbar from '../../components/navbar/nav';
 import S_nav from "../comp/secondary_nav/police_nav";
 import logo from "../../assets/images/rajpolicelogo.png";
 
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 const PoliceStationRankingTable = () => {
   // Example data for police stations
@@ -25,7 +25,7 @@ const PoliceStationRankingTable = () => {
     <>
     <Navbar />
     <S_nav />
-    <Fade>
+    <Slide>
     <table className="ranking-table">
       <thead>
         <tr>
@@ -52,7 +52,7 @@ const PoliceStationRankingTable = () => {
         ))}
       </tbody>
     </table>
-    </Fade>
+    </Slide>
     </>
   );
 };
