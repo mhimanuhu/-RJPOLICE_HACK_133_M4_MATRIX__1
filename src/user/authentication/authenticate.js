@@ -14,6 +14,9 @@ const authenticate = () => {
         View Presentation
       </div>
       </Link>
+      <Link to="/police/dashboard" >
+      <div style={{marginTop:"10px"}}  className='change role'>Switch to Police Role</div >
+      </Link>
     <div className="authencation_container">
       <div className="title_authenticate">
         AUTHENTICATION | प्रमाणीकरण
