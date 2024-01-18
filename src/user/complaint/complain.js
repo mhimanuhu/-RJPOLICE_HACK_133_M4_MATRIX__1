@@ -54,7 +54,7 @@ const ComplaintForm = () => {
         <div className="form-group">
           <div className="form-group-item">
             <label className="form-label">
-              Name:
+              Name: | नाम:
               <input
                 type="text"
                 name="name"
@@ -68,7 +68,7 @@ const ComplaintForm = () => {
           </div>
           <div className="form-group-item">
             <label className="form-label">
-              Contact Number:
+              Contact Number: | मोबाइल नंबर:
               <input
                 type="tel"
                 name="contactNumber"
@@ -83,7 +83,7 @@ const ComplaintForm = () => {
         </div>
 
         <label className="form-label">
-          Email:
+          Email: | ईमेल
           <input
             type="email"
             name="email"
@@ -96,7 +96,7 @@ const ComplaintForm = () => {
         </label>
 
         <label className="form-label">
-          Address:
+          Address: | पता:
           <textarea
             name="address"
             value={formData.address}
@@ -110,7 +110,7 @@ const ComplaintForm = () => {
         <div className="form-group">
           <div className="form-group-item">
             <label className="form-label">
-              City:
+              City: | शहर
               <input
                 type="text"
                 name="city"
@@ -124,7 +124,7 @@ const ComplaintForm = () => {
           </div>
           <div className="form-group-item">
             <label className="form-label">
-              District:
+              District: | ज़िला
               <input
                 type="text"
                 name="district"
@@ -138,7 +138,7 @@ const ComplaintForm = () => {
           </div>
           <div className="form-group-item">
             <label className="form-label">
-              Police Station:
+              Police Station: | पुलिस स्टेशन
               <input
                 type="text"
                 name="policeStation"
@@ -153,7 +153,7 @@ const ComplaintForm = () => {
         </div>
 
         <label className="form-label">
-          Complaint Type:
+          Complaint Type: | शिकायत प्रकार
           <select
             name="complaintType"
             value={formData.complaintType}
@@ -163,7 +163,7 @@ const ComplaintForm = () => {
             placeholder="Type your Complaint"
           >
             <option value="" disabled>
-              Select a complaint type
+              Select a complaint type | शिकायत का प्रकार चुनें
             </option>
             <option value="Theft">Theft</option>
             <option value="Assault">Assault</option>
@@ -173,7 +173,7 @@ const ComplaintForm = () => {
         </label>
 
         <label className="form-label">
-          Description:
+          Description: | विवरण
           <textarea
             name="description"
             value={formData.description}
@@ -185,7 +185,7 @@ const ComplaintForm = () => {
         </label>
     
         <button type="submit" className="form-button">
-          Submit Complaint
+          Submit Complaint | शिकायत प्रस्तुत करें
         </button>
       </form>
     </div>

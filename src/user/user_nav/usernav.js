@@ -8,10 +8,10 @@ const user_nav = () => {
 
     <div className="pol_nav_container">
         <Link to="/user/feedback"><div className="nav_item">
-            FEEDBACK FORM
+            FEEDBACK FORM | प्रतिक्रिया रूप
         </div></Link>
         <Link to="/user/register_complain" ><div className="nav_item">
-            REGISTER COMPLAINT
+            REGISTER COMPLAINT | शिकायत दर्ज करें
         </div></Link>
         
         

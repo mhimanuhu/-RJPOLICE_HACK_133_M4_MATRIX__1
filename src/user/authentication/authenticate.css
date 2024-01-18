@@ -61,7 +61,36 @@ a{
     color: #5C3ED7;
     cursor: pointer;
 }
-
+@media(max-width:650px){
+    .title_authenticate{
+        text-align: center;
+        color: #5C3ED7;
+        font-size: 24px;
+    }
+    .submit_forgot a .submit{
+        outline: none;
+        border: none;
+        background-color: #5C3ED7;
+        color: #fff;
+        font-size: 15px;
+        font-weight: lighter;
+        padding: 4px 10px 4px 10px;
+        width: fit-content;
+        cursor: default;
+        text-decoration: none;
+       }
+    
+}
+@media(max-width:550px){
+    .submit_forgot{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 70px;
+    }
+}
 @media(max-width:420px){
     .title_authenticate{
         text-align: center;

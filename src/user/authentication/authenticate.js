@@ -11,20 +11,20 @@ const authenticate = () => {
      <Fade>
     <div className="authencation_container">
       <div className="title_authenticate">
-        AUTHENTICATION
+        AUTHENTICATION | प्रमाणीकरण
       </div>
       <div className="form_container">
         <label for="username">
-            Username
+            Username | उपयोगकर्ता नाम
             <input id="username" value="manusharma" type="text" placeholder="Enter your Username" />
         </label>
         <label for="password">
-            Password
+            Password | पासवर्ड
             <input id="password" value="manusharma" type="password" placeholder="Enter your Password" />
         </label>
         <div className="submit_forgot">
-            <Link to="/user/feedback" ><div  type="submit" className="submit" >AUTHENTICATE</div></Link>
-           <Link to="/reset" ><span>Forgot Password</span></Link> 
+            <Link to="/user/feedback" ><div  type="submit" className="submit" >AUTHENTICATE | प्रमाणित करें</div></Link>
+           <Link to="/reset" ><span>Forgot Password | पासवर्ड भूल गए</span></Link> 
         </div>
       </div>
     </div>

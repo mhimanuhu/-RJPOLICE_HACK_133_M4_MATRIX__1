@@ -59,47 +59,47 @@ const App = () => {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="form-row">
-          <label>Date:</label>
+          <label>Date: | दिनांक:</label>
           <input type="date" name="date" value={formData.date} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Mobile:</label>
+          <label>Mobile: | मोबाइल नंबर:</label>
           <input type="tel" name="mobile" placeholder="Enter your Mobile Number" value={formData.mobile} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Get OTP:</label>
+          <label>Get OTP: | ओटीपी प्राप्त करें</label>
           <button type="button">Get OTP</button>
         </div>
         <div className="form-row">
-          <label>Enter OTP:</label>
+          <label>Enter OTP: | ओटीपी दर्ज करें</label>
           <input placeholder="Enter OTP" type="text" name="otp" value={formData.otp} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Name:</label>
+          <label>Name: | नाम:</label>
           <input type="text" placeholder="Enter your Name" name="name" value={formData.name} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Address:</label>
+          <label>Address: | पता:</label>
           <input name="address" placeholder="Enter your Address" value={formData.address} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>City / Village:</label>
+          <label>City / Village: | शहर / गांव:</label>
           <input placeholder="Enter your city / village" type="text" name="city" value={formData.city} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Pin Code:</label>
+          <label>Pin Code: | पिन कोड</label>
           <input type="number" placeholder="Enter your PIN Code" name="pinCode" value={formData.pinCode} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Email:</label>
+          <label>Email: | ईमेल</label>
           <input placeholder="Enter your Email ID" type="email" name="email" value={formData.email} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Details:</label>
+          <label>Details: | विवरण:</label>
           <input placeholder="Enter your Feedback / Details" name="feedback" value={formData.feedback} onChange={handleChange} required />
         </div>
         <div className="form-row">
-          <label>Police District:</label>
+          <label>Police District: | पुलिस जिला</label>
           <input
             placeholder="Enter Police District"
             type="text"
@@ -110,7 +110,7 @@ const App = () => {
           />
         </div>
         <div className="form-row">
-          <label>Police Station:</label>
+          <label>Police Station: | पुलिस स्टेशन</label>
           <input
             placeholder="Enter Police Stationn Name"
             type="text"
@@ -121,13 +121,13 @@ const App = () => {
           />
         </div>
         <div className="form-row">
-          <label>Rating:</label>
+          <label>Rating: | रेटिंग</label>
           <input placeholder="Enter your Rating" type="number" name="rating" value={formData.rating} onChange={handleChange} required />
         </div>
         <div className="form-buttons">
-          <button type="submit">Submit</button>
+          <button type="submit">Submit | इसे सबमिट करें</button>
           <button type="button" onClick={handleReset}>
-            Reset
+            Reset | इसे रीसेट करें
           </button>
         </div>
       </form>
