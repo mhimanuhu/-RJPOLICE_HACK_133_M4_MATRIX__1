@@ -9,6 +9,11 @@ const authenticate = () => {
     <>
     <Navbar />
      <Fade>
+      <Link target='_blank' to="https://drive.google.com/file/d/1wsVnbuuTxEWIbpe5V0-0RaRXaDR0-U5A/view?usp=sharing">
+      <div className='presentation'>
+        View Presentation
+      </div>
+      </Link>
     <div className="authencation_container">
       <div className="title_authenticate">
         AUTHENTICATION | प्रमाणीकरण
