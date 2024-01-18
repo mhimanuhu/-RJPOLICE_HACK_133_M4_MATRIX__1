@@ -23,6 +23,7 @@ const App = () => {
    <Route path="/police/dashboard/view_feedback" element={<ViewFeed />} />
    <Route path="/user/register_complain" element={<ComplaintForm />} />
    <Route path="/police/dashboard/view_complaints" element={<ViewComplain />} />
+
 </Routes>
   );
 };
