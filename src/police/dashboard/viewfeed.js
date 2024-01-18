@@ -46,8 +46,7 @@ const viewfeed = () => {
         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
         <td>Positive</td>
       </tr>
-
-   
+      
       <tr>
         <td>26-35</td>
         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>

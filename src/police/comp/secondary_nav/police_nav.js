@@ -17,6 +17,10 @@ const police_nav = () => {
         <Link to="/police/dashboard/view_feedback" ><div className="nav_item">
             VIEW FEEDBACK
         </div></Link>
+
+        <Link to="/police/dashboard/view_complaints" ><div className="nav_item">
+            VIEW COMPLAINTS
+        </div></Link>
     </div>
 
     </>

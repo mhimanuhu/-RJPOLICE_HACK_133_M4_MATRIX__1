@@ -8,7 +8,8 @@ import Dashboard from "./police/dashboard/dashboard";
 import Add from './police/dashboard/add';
 import Ranks from "./police/dashboard/rank";
 import ViewFeed from "./police/dashboard/viewfeed";
-
+import ComplaintForm from './user/complaint/complain';
+import ViewComplain from "./police/dashboard/viewcomplain";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
    <Route path="/police/dashboard/addnumbers" element={<Add />} />
    <Route path="/police/dashboard/viewranks" element={<Ranks />} />
    <Route path="/police/dashboard/view_feedback" element={<ViewFeed />} />
+   <Route path="/user/register_complain" element={<ComplaintForm />} />
+   <Route path="/police/dashboard/view_complaints" element={<ViewComplain />} />
 </Routes>
   );
 };

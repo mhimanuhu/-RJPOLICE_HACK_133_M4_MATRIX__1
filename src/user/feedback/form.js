@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './form.css';
+import UserNav from "../user_nav/usernav";
 
 import { Fade } from "react-awesome-reveal";
 import Navbar from '../../components/navbar/nav';
@@ -11,7 +12,7 @@ const App = () => {
     name: '',
     address: '',
     city: '',
-    pinCode: '',
+    pinCode: '', 
     email: '',
     feedback: '',
     policeDistrict: '',
@@ -29,7 +30,7 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement your submission logic here
+
     console.log(formData);
   };
 
@@ -53,6 +54,7 @@ const App = () => {
   return (
     <>
     <Navbar />
+    <UserNav />
     <Fade>
     <div className="form-container">
       <form onSubmit={handleSubmit}>
@@ -62,7 +64,7 @@ const App = () => {
         </div>
         <div className="form-row">
           <label>Mobile:</label>
-          <input type="tel" name="mobile" value={formData.mobile} onChange={handleChange} required />
+          <input type="tel" name="mobile" placeholder="Enter your Mobile Number" value={formData.mobile} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>Get OTP:</label>
@@ -70,35 +72,36 @@ const App = () => {
         </div>
         <div className="form-row">
           <label>Enter OTP:</label>
-          <input type="text" name="otp" value={formData.otp} onChange={handleChange} required />
+          <input placeholder="Enter OTP" type="text" name="otp" value={formData.otp} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>Name:</label>
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+          <input type="text" placeholder="Enter your Name" name="name" value={formData.name} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>Address:</label>
-          <textarea name="address" value={formData.address} onChange={handleChange} required />
+          <input name="address" placeholder="Enter your Address" value={formData.address} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>City / Village:</label>
-          <input type="text" name="city" value={formData.city} onChange={handleChange} required />
+          <input placeholder="Enter your city / village" type="text" name="city" value={formData.city} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>Pin Code:</label>
-          <input type="number" name="pinCode" value={formData.pinCode} onChange={handleChange} required />
+          <input type="number" placeholder="Enter your PIN Code" name="pinCode" value={formData.pinCode} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>Email:</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+          <input placeholder="Enter your Email ID" type="email" name="email" value={formData.email} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>Details:</label>
-          <textarea name="feedback" value={formData.feedback} onChange={handleChange} required />
+          <input placeholder="Enter your Feedback / Details" name="feedback" value={formData.feedback} onChange={handleChange} required />
         </div>
         <div className="form-row">
           <label>Police District:</label>
           <input
+            placeholder="Enter Police District"
             type="text"
             name="policeDistrict"
             value={formData.policeDistrict}
@@ -109,6 +112,7 @@ const App = () => {
         <div className="form-row">
           <label>Police Station:</label>
           <input
+            placeholder="Enter Police Stationn Name"
             type="text"
             name="policeStation"
             value={formData.policeStation}
@@ -118,7 +122,7 @@ const App = () => {
         </div>
         <div className="form-row">
           <label>Rating:</label>
-          <input type="number" name="rating" value={formData.rating} onChange={handleChange} required />
+          <input placeholder="Enter your Rating" type="number" name="rating" value={formData.rating} onChange={handleChange} required />
         </div>
         <div className="form-buttons">
           <button type="submit">Submit</button>

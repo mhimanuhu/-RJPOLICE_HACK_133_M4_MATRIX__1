@@ -1,0 +1,54 @@
+/* ComplaintForm.css */
+
+.container {
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-group-item {
+    width: 30%;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #878484;
+  }
+  
+  .form-textarea {
+    min-height: 80px;
+  }
+  
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c3ed7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
