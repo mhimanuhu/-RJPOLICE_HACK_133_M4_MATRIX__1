@@ -29,6 +29,9 @@ const PoliceNav = () => {
           </div>
         </Link>
       </div>
+      <Link to="/" >
+      <div style={{marginTop:"10px"}}  className='change role'>Switch to User Role</div >
+      </Link>
     </>
   )
 }
